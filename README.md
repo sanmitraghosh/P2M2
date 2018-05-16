@@ -2,6 +2,8 @@
 These are examples that showcase the power of probabilistic programs for model and parameter inference in mechanistic models described as non-linear ODE. This gives us the unique abitlty to solve inverse problems involving mechanistic models written in any language (as long as that model can be wrapped in python) using a ppl such as PyMC3. This essentially frees the modeller from the task of wrting, debugging and testing bespoke inference algorithms.
 
 At the present examples are written in PyMC3. However, I am going to add examples in Edward and other ppls soon.
+## Schematic: Inverse problems in biology
+![schematic of Inverse problems](https://github.com/sanmitraghosh/P2M2/blob/master/UQ_Picture.png)
 ## Background
 
 Familiarity with MCMC, sensititivity analysis, inverse problems and autodifferentiation (or knowledge of Backpropagation) would be useful.
