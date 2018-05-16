@@ -1,7 +1,19 @@
-# Probabilistic Programming for Mechanistic Models: P2M2
-This is a set of examples that showcase the power of probabilistic programs for model and parameter inference in mechanistic models: ODE,DAE,DDE, PDE etc. It uses PyMC3 as the probabilist program (where you define your probabilistic model) and its powerful implementation of the SMC sampler which is a particle based MCMC method that also gives an estimate of the model marginal likelihood (used for calculating BAyes Factor), and thus can be used to infer the posterior distributions of the parameters as well as the best model. 
+# Probabilistic Programming for inference in Mechanistic Models using PyMC3 and Edward
+These are examples that showcase the power of probabilistic programs for model and parameter inference in mechanistic models described as non-linear ODE. This gives us the unique abitlty to solve Inverse Problems involving mechanistic models written in any language (as long as that model can be wrapped in python) using a ppl such as PyMC3. This essentially frees the modeller from the task of wrting, debugging and testing bespoke inference algorithms.
 
-This gives us the unique abitlty to define any mechanistic model in any language (as long as that model can be wrapped in python) and use the powerful PyMC3 library to just press the inference button. This essentially frees the modeller from the task of wrting, debugging and testing bespoke inference algorithms.
+At the present examples are written in PyMC3. However, I am going to add examples in Edward and other ppls soon.
+## Background
 
+Familiarity with MCMC, Sensititivity analysis, Inverse problems and Reverse mode Autodifferentiation would be useful.
+## Usage
+All these examples are written in a tutorial fashion and thus I strongly recommended to follow the tutorial ordering.
+Material covered are as follows:
+
+1) Tutorial 1: Example that shows how to wrapp a model using Theano `as_op` and use the SMC algorithm.
+2) Tutorial 2 & 3: Examples that show how to write a custom differentiable op in Theano to define a custom ODE layer. NB: Go through these ones carefully as I would use similar techniques to write custom ODE layer using TensorFLow and PyTorch.
+3) Tutorial 4: Model selection 
+
+
+## Installation
 To install PyMC3 read the following:
 http://docs.pymc.io/notebooks/getting_started.html#Installation
