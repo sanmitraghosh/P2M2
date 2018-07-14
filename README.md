@@ -11,10 +11,10 @@ Familiarity with MCMC, sensititivity analysis, inverse problems and autodifferen
 All these examples are written in a tutorial fashion and thus I strongly recommend to follow the tutorial ordering.
 Materials covered are as follows:
 
-1) Tutorial 1: Example that shows how to wrap a model using Theano `as_op` and use the SMC algorithm. [interact live with this example](https://mybinder.org/v2/gh/sanmitraghosh/P2M2/master)
+1) Tutorial 1: Example that shows how to wrap a model using Theano `as_op` and use the SMC algorithm. [click here interact live with these examples](https://mybinder.org/v2/gh/sanmitraghosh/P2M2/master)
 2) Tutorial 2 & 3: Examples that show how to write a custom differentiable op in Theano to define a custom ODE layer. NB: Go through these ones carefully as I would use similar techniques to write custom ODE layer using TensorFlow and PyTorch.
 3) Tutorial 4: Model selection 
-
+4) Tutorial 5: In this tutorial I will use variational inference, a faster alternative to MCMC, to learn the Fitzhugh-Nagumo model parameters. 
 
 ## Installation
 To install PyMC3 read the following:
