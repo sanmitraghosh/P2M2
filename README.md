@@ -7,6 +7,9 @@ At the present examples are written in PyMC3. However, I am going to add example
 ## Background
 
 Familiarity with MCMC, sensititivity analysis, inverse problems and autodifferentiation (or knowledge of Backpropagation algorithm) would be useful.
+## Installation
+To install PyMC3 read the following:
+http://docs.pymc.io/notebooks/getting_started.html#Installation
 ## Usage
 All these examples are written in a tutorial fashion and thus I strongly recommend to follow the tutorial ordering.
 Materials covered are as follows:
@@ -15,9 +18,8 @@ Materials covered are as follows:
 2) Tutorial 2 & 3: Examples that show how to write a custom differentiable op in Theano to define a custom ODE layer. NB: Go through these ones carefully as I would use similar techniques to write custom ODE layer using TensorFlow and PyTorch.
 3) Tutorial 4: Model selection 
 4) Tutorial 5: In this tutorial I will use variational inference, a faster alternative to MCMC, to learn the Fitzhugh-Nagumo model parameters. 
-# TODO: 
-Add Edward (TensorFlow PyFunc) HMC, Gibbs for hierarchical example from disk, and add TensorFlow Probability AIS example.
+## TODO: 
+1) Add Theano Scan RK4 solver.
+2) Add Edward (TensorFlow `py_func`) HMC, Gibbs for hierarchical example from disk, and add TensorFlow Probability AIS example.
+3) Add Lambdify for sensitivity equation automation.
 
-## Installation
-To install PyMC3 read the following:
-http://docs.pymc.io/notebooks/getting_started.html#Installation
